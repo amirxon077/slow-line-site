@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinanceFlow Studio</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --ink:#e8e4dc; --muted:#9aa3b2;
+    --gold:#cea354; --line:#1e2532;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:660px; margin:0 auto; padding:72px 16px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px}
+  .eyebrow{
+    font:600 12px/1 ui-sans-serif, system-ui, sans-serif;
+    letter-spacing:.18em; text-transform:uppercase; color:var(--gold); margin:0 0 14px
+  }
+  h1{margin:0; font-size:34px; font-weight:600; letter-spacing:-.01em}
+  h2{margin:38px 0 12px; font-size:19px; font-weight:600}
+  p{margin:0 0 16px; color:var(--ink)}
+  .lede{font-size:18px; color:var(--muted)}
+  ul{margin:0 0 16px; padding-left:20px; color:var(--ink)}
+  li{margin-bottom:8px}
+  a{color:var(--gold)}
+  a:hover{color:#e6c07d}
+  .card{
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:10px; padding:20px 22px; margin:28px 0
+  }
+  .card p:last-child{margin-bottom:0}
+  footer{
+    margin-top:56px; padding-top:22px; border-top:1px solid var(--line);
+    color:var(--muted); font:14px/1.6 ui-sans-serif, system-ui, sans-serif
+  }
+  code{
+    font:13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+    background:#0f141e; border:1px solid var(--line);
+    border-radius:4px; padding:1px 5px; color:var(--muted)
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Personal automation tool</p>
+    <h1>FinanceFlow Studio</h1>
+  </header>
+
+  <p class="lede">
+    A small private tool that publishes finished videos to its operator's own
+    YouTube channels. It is not a product, it has no users other than its
+    operator, and nothing is offered for sale here.
+  </p>
+
+  <h2>What it does</h2>
+  <p>
+    The tool assembles a video from material its operator has prepared — a
+    written script, a synthesised narration track, a generated background image
+    and a synthesised ambient soundtrack — and then uploads that finished file
+    to a YouTube channel owned by the same person, filling in the title,
+    description, tags and thumbnail along the way.
+  </p>
+
+  <h2>Which Google data it touches</h2>
+  <p>
+    Only the operator's own YouTube account, and only to upload. The tool
+    requests these scopes:
+  </p>
+  <ul>
+    <li><code>youtube.upload</code> — to upload a video file to the channel</li>
+    <li><code>youtube</code> — to set the thumbnail and add the video to a playlist</li>
+  </ul>
+  <p>
+    It does not read viewer data, comments, subscriber lists or analytics, and
+    it does not touch any other Google service.
+  </p>
+
+  <div class="card">
+    <p>
+      <strong>Privacy:</strong> the tool collects no personal data from anyone.
+      See the <a href="privacy.html">privacy policy</a> for the details.
+    </p>
+  </div>
+
+  <h2>Who operates it</h2>
+  <p>
+    Amirxon Olimov. Questions or concerns:
+    <a href="mailto:amirxonolimov745@gmail.com">amirxonolimov745@gmail.com</a>
+  </p>
+
+  <footer>
+    FinanceFlow Studio · operated by Amirxon Olimov ·
+    <a href="privacy.html">Privacy policy</a>
+  </footer>
+</div>
+</body>
+</html>
